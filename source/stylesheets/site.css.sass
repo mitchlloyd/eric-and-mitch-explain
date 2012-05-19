@@ -1,0 +1,53 @@
+@import grid
+
+$green: lighten(green, 5)
+
+body
+  font-family: 'Lora', georgia, serif
+  line-height: 1.5
+  width: 960px
+  margin: 0 auto
+  overflow: hidden
+
+  a
+    color: $green
+    text-decoration: none
+  a:hover
+    color: darken($green, 10)
+
+section#header
+  table
+    @include column(12)
+    width: 100%
+  td.title
+    white-space: nowrap
+  td.line-spacer
+    width: 50%
+  h1
+    display: inline-block
+    font-size: 38px
+    padding: 0.25em
+    margin: 0em
+
+  .subtitle
+    @include column(7)
+    font-size: 15px
+    color: #444
+
+  .subscribe
+    @include column(5)
+
+  a.rss, a.itunes
+    background-repeat: no-repeat
+    background-position: left center
+    padding-left: 2em
+    line-height: 3em
+    padding-top: 0.5em
+    padding-bottom: 0.5em
+
+  a.rss
+    background-image: url('/images/rss.png')
+
+  a.itunes
+    background-image: url('/images/itunes.png')
+    margin-right: 1.5em

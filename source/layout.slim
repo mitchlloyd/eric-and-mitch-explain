@@ -1,0 +1,26 @@
+doctype 5
+
+html
+  head
+    title Eric and Mitch Explain
+    link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic" rel="stylesheet" type="text/css"
+    link rel="stylesheet" href="/stylesheets/site.css" media="screen, projection"
+
+  body
+    section#header
+      table
+        tr
+          td.line-spacer: hr
+          td.title: h1 ERIC & MITCH EXPLAIN
+          td.line-spacer: hr
+
+      .subtitle
+        |The world is full of unexplained wonders. But not for long.
+        br
+        |Join Eric and Mitch on a eye-opening journey into the depths of whatever.
+      .subscribe
+        a.itunes href="#" subcribe on iTunes
+        a.rss href="#" subscribe with RSS
+
+    section#posts
+      == yield
