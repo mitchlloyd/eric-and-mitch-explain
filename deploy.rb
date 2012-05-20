@@ -1,15 +1,4 @@
-=begin
-bundle exec middleman build
-mv build /tmp/eric-and-mitch-build
-git checkout gh-pages
-rm -rf ./*
-rm -r /tmp/eric-and-mitch-build
-mv /tmp/eric-and-mitch-build/* .
-git add .
-git commit -m "Build the site and add the content to gh-pages."
-git push origin gh-pages
-git checkout master
-=end
+# Code taken from https://github.com/awestruct/awestruct
 
 require 'git'
 
