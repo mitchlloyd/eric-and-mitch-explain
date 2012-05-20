@@ -1,14 +1,25 @@
-.latest-episode
-
-  .right
-    img(src='/images/001.jpeg')
-
-  .left
+.latest-episode(style="background-image: url(/images/001.jpeg)")
+  .content
     .title = "Episode ##{episode.episode_number} - #{episode.title}"
     .description == episode.body
-    a.play(href="#{episode.file}") Play
+    div#jpId.play(data-file="#{episode.file}") Play
+
+    #jquery_jplayer_1.jp-jplayer
+    #jp_container_1.jp-audio
+      .jp-type-single
+        .jp-gui.jp-interface
+          ul.jp-controls
+            li: a.jp-play(href="javascript:;" tabindex="1") play
+            li: a.jp-pause(href="javascript:;" tabindex="1") pause
+          .jp-progress
+            .jp-seek-bar
+              .jp-play-bar
+          .jp-time-holder
+            .jp-current-time
+            .jp-duration
+        .jp-no-solution
+          span Update Required
+          | To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
     a.download(href="#{episode.file}") Download this episode
     - date = episode.date
     .released Released on #{"#{date.mon}/#{date.mday}/#{date.year}"}
-
-

@@ -5,6 +5,11 @@ html
     title Eric and Mitch Explain
     link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic" rel="stylesheet" type="text/css"
     link rel="stylesheet" href="/stylesheets/site.css" media="screen, projection"
+    link type="text/css" href="/vendor/jplayer/blue.monday/jplayer.blue.monday.css" rel="stylesheet"
+
+    == javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+    == javascript_include_tag "/vendor/jplayer/jquery.jplayer.min"
+    == javascript_include_tag "/javascripts/application.js"
 
   body
     section#header
@@ -15,12 +20,13 @@ html
           td.line-spacer: hr
 
       .subtitle
-        |The world is full of unexplained wonders. But not for long.
+        | The world is full of unexplained wonders. But not for long.
         br
-        |Join Eric and Mitch on a eye-opening journey into the depths of whatever.
+        | Join Eric and Mitch on a eye-opening journey into the depths of whatever.
       .subscribe
-        a.itunes href="#" subcribe on iTunes
-        a.rss href="#" subscribe with RSS
+        a.itunes href="#" Subcribe on iTunes
+        a.rss href="#" Subscribe with RSS
 
     section#posts
       == yield
+

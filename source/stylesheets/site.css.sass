@@ -24,6 +24,10 @@ section#header
     white-space: nowrap
   td.line-spacer
     width: 50%
+    hr
+      border: 0px
+      background-color: #c8c8c8
+      height: 2px
   h1
     display: inline-block
     font-size: 38px
@@ -56,33 +60,23 @@ section#header
 .latest-episode
   @include column(24)
   margin-top: 2em
-  padding: 9px // 10px -1 to compensate for the border
   background-color: #ffad08
-  @include background(linear-gradient(top, lighten(#ffad08, 10), #ffad08))
-  border-top: 1px solid lighten($accent, 20)
-  border-left: 1px solid lighten($accent, 15)
-  border-right: 1px solid darken($accent, 2)
-  border-bottom: 1px solid darken($accent, 6)
+  overflow: hidden
   color: white
   border-radius: 3px
   box-sizing: border-box
+  background-repeat: no-repeat
 
   .title
     display: block
     font-size: 24px
-    margin-top: 0.5em
     margin-bottom: 0.5em
 
-  .right
-    @include column(8)
-    overflow: hidden
-    max-height: 240px
-    border-radius: 3px
-    margin-bottom: 10px
-    margin-top: 10px
-
-  .left
+  .content
+    padding: 20px
     @include column(15)
+    @include background(linear-gradient(top, lighten(#ffad08, 10), #ffad08))
+    margin-left: 320px
     p
       margin-top: 0px
 
@@ -92,4 +86,24 @@ section#header
   a
     color: white
 
+div.jp-audio
+  float: left
+  clear: left
+  width: 290px !important
+  margin-right: 20px
 
+  .jp-progress, .jp-time-holder
+    left: 80px !important
+
+  .jp-controls
+    width: 250px !important
+
+a.download
+  @column(3)
+  display: inline-block
+  border-bottom: 1px dotted white
+  margin-bottom: 1em
+  margin-top: 0.5em
+  &:hover
+    border-bottom: 1px dotted darken($accent, 22)
+    color: darken($accent, 22)
