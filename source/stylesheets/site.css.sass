@@ -6,7 +6,7 @@ body
   font-family: 'Lora', georgia, serif
   line-height: 1.5
   width: 960px
-  margin: 0 auto
+  margin: 0px auto
   overflow: hidden
 
   a
@@ -18,7 +18,6 @@ body
 section#header
   table
     @include column(12)
-    width: 100%
   td.title
     white-space: nowrap
   td.line-spacer
@@ -51,3 +50,17 @@ section#header
   a.itunes
     background-image: url('/images/itunes.png')
     margin-right: 1.5em
+
+.latest-episode
+  @include column(12)
+  margin-top: 1em
+  padding: 1em
+  background-color: #ffad08
+  color: white
+  border-radius: 3px
+  box-sizing: border-box
+
+  .title
+    font-size: 28px
+    margin-top: 0.5em
+    margin-bottom: 0.5em

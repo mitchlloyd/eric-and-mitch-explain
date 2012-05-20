@@ -1,6 +1,11 @@
-= episode.title
-= episode.episode_number
-- date = episode.date
-= "#{date.mon}/#{date.mday}/#{date.year}"
-a(href="#{episode.file}") Play
-== episode.body
+.latest-episode
+
+  - date = episode.date
+  .latest The very latest - #{"#{date.mon}/#{date.mday}/#{date.year}"}
+
+  .title = "Episode ##{episode.episode_number} - #{episode.title}"
+
+  a.play(href="#{episode.file}") Play
+  a.download(href="#{episode.file}") Download this episode
+
+  .description == episode.body
