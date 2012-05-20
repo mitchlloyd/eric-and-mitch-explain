@@ -1,11 +1,14 @@
 .latest-episode
 
-  - date = episode.date
-  .latest The very latest - #{"#{date.mon}/#{date.mday}/#{date.year}"}
+  .right
+    img(src='/images/001.jpeg')
 
-  .title = "Episode ##{episode.episode_number} - #{episode.title}"
+  .left
+    .title = "Episode ##{episode.episode_number} - #{episode.title}"
+    .description == episode.body
+    a.play(href="#{episode.file}") Play
+    a.download(href="#{episode.file}") Download this episode
+    - date = episode.date
+    .released Released on #{"#{date.mon}/#{date.mday}/#{date.year}"}
 
-  a.play(href="#{episode.file}") Play
-  a.download(href="#{episode.file}") Download this episode
 
-  .description == episode.body

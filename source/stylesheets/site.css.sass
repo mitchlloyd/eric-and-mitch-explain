@@ -1,6 +1,7 @@
 @import grid
+@import "compass/css3"
 
-$green: lighten(green, 5)
+$accent: #ffad08
 
 body
   font-family: 'Lora', georgia, serif
@@ -10,14 +11,14 @@ body
   overflow: hidden
 
   a
-    color: $green
+    color: $accent
     text-decoration: none
   a:hover
-    color: darken($green, 10)
+    color: darken($accent, 10)
 
 section#header
   table
-    @include column(12)
+    @include column(24)
   td.title
     white-space: nowrap
   td.line-spacer
@@ -29,12 +30,12 @@ section#header
     margin: 0em
 
   .subtitle
-    @include column(7)
+    @include column(14)
     font-size: 15px
     color: #444
 
   .subscribe
-    @include column(5)
+    @include column(10)
 
   a.rss, a.itunes
     background-repeat: no-repeat
@@ -52,15 +53,38 @@ section#header
     margin-right: 1.5em
 
 .latest-episode
-  @include column(12)
-  margin-top: 1em
-  padding: 1em
+  @include column(24)
+  margin-top: 2em
+  padding: 10px
   background-color: #ffad08
+  @include background(linear-gradient(top, lighten(#ffad08, 10), #ffad08))
   color: white
   border-radius: 3px
   box-sizing: border-box
 
   .title
-    font-size: 28px
+    display: block
+    font-size: 24px
     margin-top: 0.5em
     margin-bottom: 0.5em
+
+  .right
+    @include column(8)
+    overflow: hidden
+    max-height: 240px
+    border-radius: 3px
+    margin-bottom: 10px
+    margin-top: 10px
+
+  .left
+    @include column(15)
+    p
+      margin-top: 0px
+
+  .released
+    color: lighten(#ffad08, 30)
+
+  a
+    color: white
+
+
