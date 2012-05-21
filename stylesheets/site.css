@@ -17,7 +17,7 @@ body {
   width: 960px;
   margin: 0px auto;
   overflow: hidden;
-  background-image: url("images/bg-pattern.png"); }
+  background-image: url("../images/bg-pattern.png"); }
   /* line 14, site.css.sass */
   body a {
     color: #ffad08;
@@ -73,10 +73,10 @@ section#header a.rss, section#header a.itunes {
   padding-bottom: 0.5em; }
 /* line 53, site.css.sass */
 section#header a.rss {
-  background-image: url("images/rss.png"); }
+  background-image: url("../images/rss.png"); }
 /* line 56, site.css.sass */
 section#header a.itunes {
-  background-image: url("images/itunes.png");
+  background-image: url("../images/itunes.png");
   margin-right: 1.5em; }
 
 /* line 60, site.css.sass */
