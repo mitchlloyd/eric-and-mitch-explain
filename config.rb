@@ -53,11 +53,14 @@
 ###
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+
+HOST_URL = 'http://ericandmitchexplain.com'
+
+helpers do
+  def absolute_url(path)
+    HOST_URL + path
+  end
+end
 
 # Change the CSS directory
 # set :css_dir, "alternative_css_directory"
@@ -91,6 +94,8 @@ configure :build do
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
+
+page "/feed.xml", layout: false
 
 require './extensions/podcast'
 activate :podcast

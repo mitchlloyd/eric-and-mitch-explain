@@ -1,0 +1,34 @@
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/" version="2.0">
+<channel>
+  <% podcast_description = "The world is full of unexplained wonders. But not for long. Join Eric and Mitch on a eye-opening journey into the depths of whatever." %>
+
+  <!-- RSS 2.0 Channel Information -->
+  <title>Eric and Mitch Explain</title>
+  <link>http://ericandmitchexplain.com</link>
+  <description><%= podcast_description %></description>
+  <language>en-us</language>
+  <pubDate><%= podcast_episodes.first.date.to_time.rfc2822 %></pubDate>
+
+  <!-- iTunes Channel Information -->
+  <itunes:owner>
+    <itunes:name>Mitch Lloyd</itunes:name>
+    <itunes:email>itunes@mitchlloyd.com</itunes:email>
+  </itunes:owner>
+  <itunes:author>Eric and Mitch</itunes:author>
+  <itunes:subtitle><%= podcast_description %></itunes:subtitle>
+  <itunes:summary><%= podcast_description %></itunes:summary>
+  <itunes:explicit>Yes</itunes:explicit>
+  <itunes:category text="Comedy"></itunes:category>
+
+  <!-- Per Episode Information -->
+  <% podcast_episodes[0..10].each do |episode| %>
+  <item>
+    <title><%= episode.title %></title>
+    <description><%= html_escape(episode.body) %></description>
+    <dc:creator>Eric and Mitch</dc:creator>
+    <pubDate><%= episode.date.to_time.rfc2822 %></pubDate>
+    <guid><%= absolute_url(episode.url) %></guid>
+  </item>
+  <% end %>
+</channel>
+</rss>

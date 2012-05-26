@@ -33,4 +33,8 @@ class Episode
   def body
     @resource.render(layout: false)
   end
+
+  def url
+    @resource.url
+  end
 end
