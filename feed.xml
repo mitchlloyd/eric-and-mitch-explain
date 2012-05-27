@@ -1,0 +1,34 @@
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/" version="2.0">
+<channel>
+  
+
+  <!-- RSS 2.0 Channel Information -->
+  <title>Eric and Mitch Explain</title>
+  <link>http://ericandmitchexplain.com</link>
+  <description>The world is full of unexplained wonders. But not for long. Join Eric and Mitch on a eye-opening journey into the depths of whatever.</description>
+  <language>en-us</language>
+  <pubDate>Sat, 19 May 2012 00:00:00 -0400</pubDate>
+
+  <!-- iTunes Channel Information -->
+  <itunes:owner>
+    <itunes:name>Mitch Lloyd</itunes:name>
+    <itunes:email>itunes@mitchlloyd.com</itunes:email>
+  </itunes:owner>
+  <itunes:author>Eric and Mitch</itunes:author>
+  <itunes:subtitle>The world is full of unexplained wonders. But not for long. Join Eric and Mitch on a eye-opening journey into the depths of whatever.</itunes:subtitle>
+  <itunes:summary>The world is full of unexplained wonders. But not for long. Join Eric and Mitch on a eye-opening journey into the depths of whatever.</itunes:summary>
+  <itunes:explicit>Yes</itunes:explicit>
+  <itunes:category text="Comedy"></itunes:category>
+
+  <!-- Per Episode Information -->
+  
+  <item>
+    <title>Business Travel</title>
+    <description>&lt;p&gt;In this inaugural episode of Eric and Mitch Explain, you&amp;#8217;ll get a heavy dose of travel tips for the fledging road-warrior. Be prepared to assemble several identical dop-kits and take a nostalgic look at radiation throughout the years.&lt;/p&gt;</description>
+    <dc:creator>Eric and Mitch</dc:creator>
+    <pubDate>Sat, 19 May 2012 00:00:00 -0400</pubDate>
+    <guid>http://ericandmitchexplain.com/episodes/001-business-travel.html</guid>
+  </item>
+  
+</channel>
+</rss>
