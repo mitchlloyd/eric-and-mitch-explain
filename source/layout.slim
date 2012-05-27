@@ -3,9 +3,12 @@ doctype 5
 html
   head
     title Eric and Mitch Explain
+
     link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic" rel="stylesheet" type="text/css"
     link rel="stylesheet" href="stylesheets/site.css" media="screen, projection"
     link type="text/css" href="javascripts/vendor/jplayer/blue.monday/jplayer.blue.monday.css" rel="stylesheet"
+
+    link rel="alternate" type="application/rss+xml" title="RSS" href="http://feeds.feedburner.com/ericandmitchexplain"
 
     script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"
     script src="javascripts/vendor/jplayer/jquery.jplayer.min.js" type="text/javascript"
@@ -25,7 +28,7 @@ html
         | Join Eric and Mitch on a eye-opening journey into the depths of whatever.
       .subscribe
         a.itunes href="#" Subcribe on iTunes
-        a.rss href="#" Subscribe with RSS
+        a.rss href="http://feeds.feedburner.com/ericandmitchexplain" Subscribe with RSS
 
     section#posts
       == yield
