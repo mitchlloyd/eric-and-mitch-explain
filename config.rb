@@ -54,7 +54,7 @@
 
 # Methods defined in the helpers block are available in templates
 
-HOST_URL = 'http://ericandmitchexplain.com'
+HOST_URL = 'http://ericandmitch.com'
 
 helpers do
   def absolute_url(path)
