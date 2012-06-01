@@ -1,6 +1,7 @@
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/" version="2.0">
 <channel>
   <% podcast_description = "The world is full of unexplained wonders. But not for long. Join Eric and Mitch on a eye-opening journey into the depths of whatever." %>
+  <% artwork_url = "http://ericandmitch.com/images/eme-artwork.jpg" %>
 
   <!-- RSS 2.0 Channel Information -->
   <title>Eric and Mitch Explain</title>
@@ -19,7 +20,7 @@
   <itunes:summary><%= podcast_description %></itunes:summary>
   <itunes:explicit>Yes</itunes:explicit>
   <itunes:category text="Comedy"></itunes:category>
-  <itunes:image href="http://ericandmitch.com/images/eme-artwork.jpg"/>
+  <itunes:image href="<%= artwork_url %>"/>
 
   <!-- Per Episode Information -->
   <% podcast_episodes[0..10].each do |episode| %>
@@ -30,6 +31,7 @@
     <pubDate><%= episode.date.to_time.rfc2822 %></pubDate>
     <guid><%= absolute_url(episode.url) %></guid>
     <enclosure url="<%= episode.file %>" length="<%= episode.file_size %>" type="audio/mpeg"/>
+    <itunes:image href="<%= artwork_url %>"/>
   </item>
   <% end %>
 </channel>
