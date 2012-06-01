@@ -30,6 +30,10 @@ class Episode
     @resource.data[:file]
   end
 
+  def file_size
+    @resource.data[:file_size] or ""
+  end
+
   def body
     @resource.render(layout: false)
   end

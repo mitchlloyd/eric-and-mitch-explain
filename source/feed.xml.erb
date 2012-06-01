@@ -29,6 +29,7 @@
     <dc:creator>Eric and Mitch</dc:creator>
     <pubDate><%= episode.date.to_time.rfc2822 %></pubDate>
     <guid><%= absolute_url(episode.url) %></guid>
+    <enclosure url="<%= episode.file %>" length="<%= episode.file_size %>" type="audio/mpeg"/>
   </item>
   <% end %>
 </channel>
