@@ -1,6 +1,7 @@
 <rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/" version="2.0">
 <channel>
   
+  
 
   <!-- RSS 2.0 Channel Information -->
   <title>Eric and Mitch Explain</title>
@@ -19,7 +20,7 @@
   <itunes:summary>The world is full of unexplained wonders. But not for long. Join Eric and Mitch on a eye-opening journey into the depths of whatever.</itunes:summary>
   <itunes:explicit>Yes</itunes:explicit>
   <itunes:category text="Comedy"></itunes:category>
-  <itunes:image href="http://ericandmitch.com/images/eme-artwork.jpg"/>
+  <itunes:image href=""/>
 
   <!-- Per Episode Information -->
   
@@ -30,6 +31,7 @@
     <pubDate>Sat, 19 May 2012 00:00:00 -0400</pubDate>
     <guid>http://ericandmitch.com/episodes/001-business-travel.html</guid>
     <enclosure url="http://dl.dropbox.com/u/26290862/Podcast/Eric%20%26%20Mitch%20Explain%20001%20-%20Business%20Travel.mp3" length="32583778" type="audio/mpeg"/>
+    <itunes:image href=""/>
   </item>
   
 </channel>
