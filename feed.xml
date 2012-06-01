@@ -20,7 +20,7 @@
   <itunes:summary>The world is full of unexplained wonders. But not for long. Join Eric and Mitch on a eye-opening journey into the depths of whatever.</itunes:summary>
   <itunes:explicit>Yes</itunes:explicit>
   <itunes:category text="Comedy"></itunes:category>
-  <itunes:image href=""/>
+  <itunes:image href="http://ericandmitch.com/images/eme-artwork.jpg"/>
 
   <!-- Per Episode Information -->
   
@@ -31,7 +31,7 @@
     <pubDate>Sat, 19 May 2012 00:00:00 -0400</pubDate>
     <guid>http://ericandmitch.com/episodes/001-business-travel.html</guid>
     <enclosure url="http://dl.dropbox.com/u/26290862/Podcast/Eric%20%26%20Mitch%20Explain%20001%20-%20Business%20Travel.mp3" length="32583778" type="audio/mpeg"/>
-    <itunes:image href=""/>
+    <itunes:image href="http://ericandmitch.com/images/eme-artwork.jpg"/>
   </item>
   
 </channel>
