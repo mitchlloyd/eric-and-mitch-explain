@@ -22,4 +22,4 @@ And you should be able to see the website at http://localhost:4567
 
 ### Deploying
 
-First run `bundle exec middleman build` and then run `rake deploy`.
+First run `rake build` and then run `rake deploy`.
