@@ -54,5 +54,3 @@ class GitHubPagesDeploy
     end
   end
 end
-
-GitHubPagesDeploy.new.run
