@@ -1,44 +1,52 @@
-require 'date'
+require File.dirname(__FILE__) + '/data_source'
+
+EPISODE_DIR = './source/episodes'
 
 class Episode
   def initialize(resource)
-    @resource = resource
-  end
-
-  def title
-    @resource.data[:title] or 'Untitled'
-  end
-
-  # Episode paths look like this:
-  #     episodes/001-business-travel.html
-  #
-  # This method will parse out a 1 from the example path.
-  def episode_number
-    filename = @resource.path.split('/').last
-    filename.split('-').first.to_i
-  end
-
-  def date
-    if date = @resource.data[:date]
-      date
+    if resource.class.to_s == 'Middleman::Sitemap::Resource'
+      @data = DataSource::Middleman.new(resource)
     else
-      Date.today()
+      @data = DataSource::File.new(EPISODE_DIR + '/' + resource)
     end
   end
 
+  def title
+    @data.title or 'Untitled'
+  end
+
+  def episode_number
+    @data.episode_number
+  end
+
+  def date
+    (date = @data.date) ? date : Date.today()
+  end
+
   def file
-    @resource.data[:file]
+    @data.file
   end
 
   def file_size
-    @resource.data[:file_size] or ""
+    @data.file_size or ""
   end
 
   def body
-    @resource.render(layout: false)
+    @data.body
   end
 
   def url
-    @resource.url
+    @data.url
+  end
+
+  def self.get(path)
+    # In the future we'll accept a path or an integer.
+    episode_number = path.match(/\d{3}/)[0].to_i
+
+    Dir.entries(EPISODE_DIR).each do |filename|
+      return self.new(filename) if filename.match("%03d" % episode_number)
+    end
+
+    return false
   end
 end
