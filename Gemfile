@@ -5,4 +5,4 @@ gem "debugger"
 gem 'git'
 
 # Gem used to edit id3 tags for mp3 files.
-gem 'taglib-ruby'
+gem 'taglib-ruby', require: 'taglib'
