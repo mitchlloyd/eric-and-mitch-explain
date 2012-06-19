@@ -80,68 +80,87 @@ section#header a.itunes {
   margin-right: 1.5em; }
 
 /* line 60, site.css.sass */
-.latest-episode {
+.episode {
+  position: relative;
   display: inline;
   float: left;
   width: 940px;
   margin: 0 10px;
   margin-top: 2em;
-  background-color: #ffad08;
   overflow: hidden;
-  color: white;
+  color: #b87b00;
   border-radius: 3px;
   box-sizing: border-box;
   background-repeat: no-repeat; }
-  /* line 70, site.css.sass */
-  .latest-episode .title {
+  /* line 71, site.css.sass */
+  .episode .title {
     display: block;
     font-size: 24px;
     margin-bottom: 0.5em; }
-  /* line 75, site.css.sass */
-  .latest-episode .content {
+  /* line 76, site.css.sass */
+  .episode .content {
     padding: 20px;
+    background-color: #fff1d4;
     display: inline;
     float: left;
     width: 580px;
     margin: 0 10px;
+    margin-left: 320px; }
+    /* line 81, site.css.sass */
+    .episode .content p {
+      margin-top: 0px; }
+  /* line 84, site.css.sass */
+  .episode .released {
+    color: #ffbc33; }
+  /* line 87, site.css.sass */
+  .episode a {
+    color: white; }
+  /* line 90, site.css.sass */
+  .episode a.download {
+    @column(3);
+    display: inline-block;
+    color: #b87b00;
+    border-bottom: 1px dotted #b87b00;
+    margin-bottom: 1em;
+    margin-top: 0.5em; }
+    /* line 97, site.css.sass */
+    .episode a.download:hover {
+      border-bottom: 1px dotted #483000;
+      color: #483000; }
+
+/* line 101, site.css.sass */
+.latest {
+  background-color: #ffad08;
+  color: white; }
+  /* line 104, site.css.sass */
+  .latest .content {
     background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffbe3b), color-stop(100%, #ffad08));
     background: -webkit-linear-gradient(top, #ffbe3b, #ffad08);
     background: -moz-linear-gradient(top, #ffbe3b, #ffad08);
     background: -o-linear-gradient(top, #ffbe3b, #ffad08);
     background: -ms-linear-gradient(top, #ffbe3b, #ffad08);
-    background: linear-gradient(top, #ffbe3b, #ffad08);
-    margin-left: 320px; }
-    /* line 80, site.css.sass */
-    .latest-episode .content p {
-      margin-top: 0px; }
-  /* line 83, site.css.sass */
-  .latest-episode .released {
+    background: linear-gradient(top, #ffbe3b, #ffad08); }
+  /* line 106, site.css.sass */
+  .latest .released {
     color: #ffe0a1; }
-  /* line 86, site.css.sass */
-  .latest-episode a {
+  /* line 109, site.css.sass */
+  .latest a.download {
+    border-bottom: 1px dotted white;
     color: white; }
+    /* line 112, site.css.sass */
+    .latest a.download:hover {
+      border-bottom: 1px dotted #976500;
+      color: #976500; }
 
-/* line 89, site.css.sass */
+/* line 116, site.css.sass */
 div.jp-audio {
   float: left;
   clear: left;
   width: 290px !important;
   margin-right: 20px; }
-  /* line 95, site.css.sass */
+  /* line 122, site.css.sass */
   div.jp-audio .jp-progress, div.jp-audio .jp-time-holder {
     left: 80px !important; }
-  /* line 98, site.css.sass */
+  /* line 125, site.css.sass */
   div.jp-audio .jp-controls {
     width: 250px !important; }
-
-/* line 101, site.css.sass */
-a.download {
-@column(3);
-  display: inline-block;
-  border-bottom: 1px dotted white;
-  margin-bottom: 1em;
-  margin-top: 0.5em; }
-  /* line 107, site.css.sass */
-  a.download:hover {
-    border-bottom: 1px dotted #976500;
-    color: #976500; }

@@ -34,5 +34,15 @@
     <itunes:image href="http://ericandmitch.com/images/eme-artwork.jpg"/>
   </item>
   
+  <item>
+    <title>Techno Utopianism</title>
+    <description>&lt;p&gt;Put on your 3D glasses for this one. Transhumanism? Techno Utopianism? Technology-not-living-up-to-its-hype-ism? Eric throws down on those who would gush over our imminent technological transcendence. Meanwhile, Mitch can&amp;#8217;t seem to get over the technology gap between big business and consumers.&lt;/p&gt;</description>
+    <dc:creator>Eric and Mitch</dc:creator>
+    <pubDate>Mon, 18 Jun 2012 00:00:00 -0400</pubDate>
+    <guid>http://ericandmitch.com/episodes/002-techno-utopianism.html</guid>
+    <enclosure url="http://dl.dropbox.com/u/26290862/Podcast/eric%26mitch-002.mp3" length="24060888" type="audio/mpeg"/>
+    <itunes:image href="http://ericandmitch.com/images/eme-artwork.jpg"/>
+  </item>
+  
 </channel>
 </rss>
